@@ -7,7 +7,8 @@ const server = http.createServer(app);
 
 const io = socketio(server, {
   cors: {
-    origin: "http://localhost:3001", // Update this to match your React app's port
+    // origin: "http://localhost:3001", // Update this to match your React app's port
+    origin: "https://real-time-tracker-pearl.vercel.app/", // Update this to match your React app's port
     methods: ["GET", "POST"],
   },
 });
