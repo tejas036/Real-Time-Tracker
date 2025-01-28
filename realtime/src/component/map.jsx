@@ -128,6 +128,7 @@ const Map = () => {
           <MapContainer
             center={location}
             zoom={16}
+            zoomControl={true} 
             style={{ height: "100%", width: "100%" }}
           >
             <TileLayer
